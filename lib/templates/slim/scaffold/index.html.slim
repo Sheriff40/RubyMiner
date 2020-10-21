@@ -1,0 +1,36 @@
+.col-12
+  .row
+    .col-12.px-2.mt-3
+      h3.text-secondary.mb-0 style=("color: #f36774 !important;")  <%=plural_name.titleize%>
+      .row.mt-5
+        .col-12
+          i.fa.fa-search.mr-2
+          .search-filter.d-inline
+          = link_to new_<%= file_path %>_path, class: "btn btn-outline-primary btn-sm float-right" do
+            i.fas.fa-plus
+            |&nbsp;Add <%=singular_name.titleize%>
+
+          table.table.table-hover.bg-white.shadow.p-3.mb-5.bg-white.rounded.text-center#example-table
+            thead.bg-light.text-secondary
+              tr
+                th S.N.
+              <% attributes.each do |attr| %>
+                th <%=attr.name.titleize %>
+              <% end %>
+                th Actions
+
+            tbody
+              - @<%= plural_name%>.each.with_index(1) do |data,index|
+                tr
+                  td = index
+                <% attributes.each do |attr| %>
+                  td = data.<%=attr.name %>
+                <% end %>
+                  td
+                    span.action-btn
+                      = link_to data do
+                        i.fa.fa-eye
+                      = link_to edit_<%=singular_name%>_path(data) do
+                        i.fa.fa-edit
+                      = link_to data, data: { confirm: 'Are you sure?' }, method: :delete do
+                        i.fa.fa-trash

@@ -1,0 +1,32 @@
+= form_for @<%= singular_name %> do |f|
+  .form-row
+  <% attributes.each do |attr|%>
+    <% if attr.type.downcase == :integer %>
+      .col-md-6
+        .form-group
+          = f.label :<%= attr.name%>,"<%=attr.name.titleize%>", class: "font-weight-bold fa-sm"
+          = f.number_field :<%=attr.name%>, class: "form-control py-4", style: "border:none; border-radius: 8px 8px 8px 8px; background-color: #e4e4e4;", placeholder: "Enter <%=attr.name.titleize%>",required: true
+    <% elsif attr.type.downcase == :date %>
+      .col-md-6
+        .form-group
+          = f.label :<%= attr.name%>,"<%=attr.name.titleize%>", class: "font-weight-bold fa-sm"
+          = f.date_field :<%=attr.name%>, class: "form-control py-4", style: "border:none; border-radius: 8px 8px 8px 8px; background-color: #e4e4e4;",placeholder: "Enter <%=attr.name.titleize%>", required: true
+    <% elsif attr.type.downcase == :text %>
+      .col-md-6
+        .form-group
+          = f.label :<%= attr.name%>,"<%=attr.name.titleize%>", class: "font-weight-bold fa-sm"
+          = f.text_area :<%=attr.name%>, class: "form-control all-styles", placeholder: "Enter <%=attr.name.titleize%>"
+    <% elsif attr.name.downcase == "email" %>
+      .col-md-6
+        .form-group
+          = f.label :<%= attr.name%>,"<%=attr.name.titleize%>", class: "font-weight-bold fa-sm"
+          = f.email_field :<%=attr.name%>, class: "form-control py-4", style: "border:none; border-radius: 8px 8px 8px 8px; background-color: #e4e4e4;",placeholder: "Enter <%=attr.name.titleize%>", required: true
+    <% else %>
+      .col-md-6
+        .form-group
+          = f.label :<%= attr.name %>, "<%=attr.name.titleize%>", class: "font-weight-bold fa-sm"
+          = f.text_field :<%=attr.name %>, class: "form-control py-4", style: "border:none; border-radius: 8px 8px 8px 8px; background-color: #e4e4e4;", placeholder: "Enter <%=attr.name.titleize%>", required: true
+    <%end%>
+  <% end %>
+  .actions.text-center
+    = f.submit class: "btn btn-outline-secondary px-5"

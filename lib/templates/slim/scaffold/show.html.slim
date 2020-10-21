@@ -1,0 +1,12 @@
+.col-md-12
+  .card
+    .card-header.card-header-primary
+      h4.card-title  <%=singular_name.titleize%> Details
+    .card-body
+      .form-row
+      <% attributes.each do |attr|%>
+        .col-md-6
+          p
+            strong <%= attr.name.titleize%>:&nbsp;
+            = @<%=singular_name%>.<%= attr.name %>&.upcase
+      <%end%>
