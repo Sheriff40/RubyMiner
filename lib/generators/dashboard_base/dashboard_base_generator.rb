@@ -13,7 +13,4 @@ class DashboardBaseGenerator < Rails::Generators::Base
     copy_file "sidebar.rb", "app/views/layouts/_sidebar.html.slim"
   end
 
-  def create_sidebar_base_file
-    File.create "application.rb", application.rb, mode: "a"
-  end
 end
