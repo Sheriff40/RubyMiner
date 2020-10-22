@@ -1,3 +1,3 @@
 module Rubyminer
-  VERSION = "0.5"
+  VERSION = "0.8"
 end

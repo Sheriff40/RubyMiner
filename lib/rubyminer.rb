@@ -8,3 +8,5 @@ module Rubyminer
     end
   end
 end
+
+Rubyminer::Copier.copy
