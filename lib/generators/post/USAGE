@@ -2,11 +2,10 @@ Description:
     Explain the generator
 
     Step 1:
-      get 'user_post_likes/create'
       resources :posts do
         resources :comments
       end
-      resources :user_post_likes, only: [:create, :destroy]
+      resources :user_post_likes, only: :create
 
     Step 2:
         Add in application.js

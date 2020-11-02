@@ -7,7 +7,7 @@
         article.container.mt-5
           h1.text-center Blog
         .content.mt-5
-          main#blog
+          main#post
             section
               .container
                 p
@@ -22,7 +22,7 @@
                           span.badge.badge-white.mx-1.border.border-brand-green
                             - if article.user
                               - user =article.user
-                              - if user.image.attached?
+                              - if user.avatar.attached?
                                 = image_tag "#{user.image}.jpg", width: '20px', class: 'rounded-circle mr-1', style: 'margin-top: -1px'
                               - else
                                 = image_tag "avatar.png", width: '20px', class: 'rounded-circle mr-1', style: 'margin-top: -1px'

@@ -9,8 +9,8 @@
             .row.section-header.banner
               - user = @post.user
               .author.mt-3.text-center.col-md-6.offset-md-3
-                - if user.image.attached?
-                  = image_tag "#{user.image}.jpg", width: '100px', class: 'text-center rounded-circle border border-white'
+                - if user.avatar.attached?
+                  = image_tag "#{user.avatar}.jpg", width: '100px', class: 'text-center rounded-circle border border-white'
                 - else
                   = image_tag "avatar.png", width: '100px', class: 'text-center rounded-circle border border-white'
 
@@ -23,7 +23,7 @@
           h1.text-center = @post.title
           - if @post.user
             / - current_page.tags << current_page.data.author
-            - @additional_class = 'blog-post'
+            - @additional_class = 'post-post'
             .details.text-center
               - words_per_min = @post.body.to_plain_text.split(' ').count/ 250.0
               .badge.badge-success.mx-1.fas.fa-book-reader
@@ -53,8 +53,8 @@
                 - @post.comments.where(parent_comment_id:nil).each do |comment|
                   - user = comment.user
                   p
-                    - if user.image.attached?
-                      =image_tag user.image, width:"25px", class:"rounded-circle mr-3"
+                    - if user.avatar.attached?
+                      =image_tag user.avatar, width:"25px", class:"rounded-circle mr-3"
                     - else
                       =image_tag "avatar.png", width:"25px", class:"rounded-circle mr-2"
 
@@ -78,8 +78,8 @@
                             div style="margin-left: 30px"
                               - user = comment.user
                               p
-                                - if user.image.attached?
-                                  =image_tag user.image, width:"25px", class:"rounded-circle mr-3"
+                                - if user.avatar.attached?
+                                  =image_tag user.avatar, width:"25px", class:"rounded-circle mr-3"
                                 - else
                                   =image_tag "avatar.png", width:"25px", class:"rounded-circle mr-2"
                                 strong =user.email

@@ -33,7 +33,7 @@
           - if post.user.avatar.attached?
             = image_tag post.user.avatar, class: "arthur-small"
           - else
-            = image_tag 'profile.png', class: "arthur-small"
+            = image_tag 'avatar.png', class: "arthur-small"
           .blog-small-content
             a href="#{post_path(post)}"
               = post.title.titleize

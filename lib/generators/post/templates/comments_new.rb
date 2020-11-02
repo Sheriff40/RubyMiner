@@ -1,8 +1,8 @@
 .row
   .col-1
     - if current_user
-      - if current_user.image.attached?
-        = image_tag current_user.image, width: "25px"
+      - if current_user.avatar.attached?
+        = image_tag current_user.avatar, width: "25px"
       - else
         = image_tag "avatar.png", width: "40px"
     - else

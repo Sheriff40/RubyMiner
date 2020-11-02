@@ -18,21 +18,23 @@ class DashboardBaseGenerator < Rails::Generators::Base
   end
 
   def create_dashboard_index
-    copy_file "dashboard_index.rb", "app/views/dashboards/blog_index.rb"
+    copy_file "dashboard_index.rb", "app/views/dashboards/index.html.slim"
   end
 
-
   def create_login_page
-    copy_file "login.rb", "app/views/devise/sessions/blog_new.rb"
+    copy_file "login.rb", "app/views/devise/sessions/new.html.slim"
   end
 
   def create_registration_page
-    copy_file "registration.rb", "app/views/devise/registrations/blog_new.rb"
+    copy_file "registration.rb", "app/views/devise/registrations/new.html.slim"
   end
 
   def create_application_slim
     copy_file "application_slim.rb", "app/views/layouts/application.html.slim"
   end
 
+  def upload_avatar_pic
+    copy_file "avatar.png", "app/assets/images/avatar.png"
+  end
 
 end
