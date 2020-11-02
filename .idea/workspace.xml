@@ -2,34 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/generators/dashboard_base/templates/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/post/templates/posts_css.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/USAGE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/USAGE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/blog_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_edit.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_edit.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_form.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_index.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_index.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_javascript.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_javascript.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_migration.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_migration.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_model.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_new.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_new.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_show.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_show.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/blog_sidebar.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/comment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/comment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/comment_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/comment_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/comment_migration.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/comment_migration.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/comments_new.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/user_like_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/user_like_model.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/user_post_like_migration.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/user_post_like_migration.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/blog/templates/user_post_likes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/user_post_likes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rubyminer/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rubyminer/version.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rubyminer-0.5.gem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rubyminer-0.7.gem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rubyminer-0.8.gem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rubyminer-1.0.gem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/post/USAGE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/USAGE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/post/templates/post_form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_form.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,87 +17,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ruby_miners_template.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/posts_css.rb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="78" column="73" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/dashboard_base_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="3" selection-end-line="3" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_index.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+            <state relative-caret-position="71">
+              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_show.rb">
+        <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="81" column="56" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/post/USAGE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="240">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -175,18 +84,20 @@
         <option value="$PROJECT_DIR$/../ruby_miners_template.rb" />
         <option value="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/post/post_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb" />
         <option value="$PROJECT_DIR$/lib/generators/post/templates/post_index.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_show.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.html.slim" />
+        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_form.rb" />
         <option value="$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb" />
         <option value="$PROJECT_DIR$/lib/generators/post/USAGE" />
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_show.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="1239" />
+    <option name="width" value="1229" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectView">
@@ -350,12 +261,13 @@
       <workItem from="1604303629657" duration="3142000" />
       <workItem from="1604307355417" duration="4033000" />
       <workItem from="1604312906555" duration="2383000" />
-      <workItem from="1604315332238" duration="1429000" />
+      <workItem from="1604315332238" duration="1472000" />
+      <workItem from="1604317265553" duration="1601000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28848000" />
+    <option name="totallyTimeSpent" value="30492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,7 +282,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3048683" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3104549" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -383,7 +295,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32597622" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32427844" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -461,13 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_form.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
@@ -567,18 +472,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ruby_miners_template.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/posts_css.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="78" column="73" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="73" />
+        <state relative-caret-position="315">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -596,31 +491,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_form.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_index.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/post/USAGE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="210">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -628,6 +509,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="81" column="56" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="78" column="73" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/posts_css.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_index.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
         </state>
       </provider>
     </entry>

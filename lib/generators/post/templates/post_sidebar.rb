@@ -1,48 +1,51 @@
-.sidebar-search
-  i.fa.fa-search
-  input.search-input placeholder=("Search here...") size="50" type="text" /
-.post-types
-  nav
-    #nav-tab.nav.nav-tabs.post-type-tab role="tablist"
-      a#popular-tab.nav-item.nav-link.active aria-controls="nav-popular" aria-selected="true" data-toggle="tab" href="#popular-posts" role="tab"  Popular posts
-      a#recent-tab.nav-item.nav-link aria-controls="nav-recent" aria-selected="false" data-toggle="tab" href="#recent-posts" role="tab"  Recent posts
-  #post-tabContent.tab-content
-    #popular-posts.tab-pane.fade.show.active aria-labelledby="popular-tab" role="tabpanel"
-      - Post.all.order(like_count: :desc)[0..5].each do |post|
-        .blog-small-single
-          - if post.user.avatar.attached?
-            = image_tag post.user.avatar, class: "arthur-small"
-          - else
-            = image_tag 'avatar.png', class: "arthur-small"
-          .blog-small-content
-            a href="#{post_path(post)}"
-              = post.title.titleize
-            span.d-flex.justify-content-between
-              p
-                = link_to edit_post_path(post) do
-                  i.fa.fa-edit.text-info
-                  | &nbsp;
-                = post.user.username.titleize rescue post.user.email
-              p.primary-color
-                i.fa.fa-clock-o
-                = post.created_at.strftime("%e %B, %Y")
+scss:
+  $lineheight: 20px;
+  aside {
+    .article-container {
+      p {
+        img {
+          display: inline-block;
+          height: $lineheight;
+          margin-top: -3px;
+          border: 1px solid green;
+          margin-right: 3px;
+        }
+      }
+    }
 
-    #recent-posts.tab-pane.fade aria-labelledby="recent-tab" role="tabpanel"
-      - Post.all.order(created_at: :desc)[0..5].each do |post|
-        .blog-small-single
-          - if post.user.avatar.attached?
-            = image_tag post.user.avatar, class: "arthur-small"
+
+    .date {
+      font-size: 12px;
+    }
+  }
+
+aside
+  .article-container
+    h6.m-0
+      | Recent Articles
+
+    - if !current_user.nil?
+      = link_to"New Blog", new_post_path, class: "btn btn-sm btn-success mt-3"
+
+    - Post.all[0...10].each do |article|
+      .mt-2.p-1
+        = link_to article.title.titleize, article, class: "text-decoration-none text-success"
+        br
+        - user = article.user
+        - author_name = user.email
+        p.m-0
+          - if user.avatar.attached?
+            = image_tag "#{user.avatar}.jpg", class: 'rounded-circle'
           - else
-            = image_tag 'avatar.png', class: "arthur-small"
-          .blog-small-content
-            a href="#{post_path(post)}"
-              = post.title.titleize
-            span.d-flex.justify-content-between
-              p
-                = link_to edit_post_path(post) do
-                  i.fa.fa-edit.text-info
-                  | &nbsp;
-                = post.title.titleize
-              p.primary-color
-                i.fa.fa-clock-o
-                = post.created_at.strftime("%e %B, %Y")
+            = image_tag "avatar.png", class: 'rounded-circle'
+          = author_name
+          span.date
+            = " (#{article.created_at.strftime('%b %e, %Y')})"
+      hr
+
+  .by-year-container
+    h6.m-0.mt-4
+      | By Year
+    - Post.all.group_by { |a| a.created_at.year }.each do |year, articles|
+      div
+        = link_to year, articles.first, class: 'badge badge-secondary mr-1'

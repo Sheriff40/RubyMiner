@@ -20,5 +20,5 @@
           = f.text_area :description, placeholder: "Comments here", class: "w-75"
           = f.hidden_field :parent_comment_id
         = f.hidden_field :post_id
-        .actions.d-inline.ml-3
-          = f.submit "Comment", class: "btn btn-success btn-sm"
+      .actions.d-inline
+        = f.submit "Comment", class: "btn btn-success btn-sm"
