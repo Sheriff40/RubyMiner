@@ -1,0 +1,36 @@
+Description:
+    Explain the generator
+
+    Step 1:
+        resources :notices, only: :index
+        resources :user_notices, only: :update
+
+    Step 2:
+        In user.rb add
+          has_many :user_notices, dependent: :destroy
+          has_many :notices, through: :user_notices
+    Step 3:
+
+       Add the following code in the models, where you want to have notification
+
+         Example: (I want to send notification to all the users in the system, when an event is created)
+
+         after_create :send_notification
+
+         def send_notification
+            # For creating a notice after an event is created
+            @notice = Notice.create!(title: "A new Event has been created", url: "/events")
+
+            # After the notice has been created sending it as nofitications
+            # to all the users in the system
+            @notice.users = User.find(User.all.ids)
+         end
+    Step 4:
+      Add in application.js
+        require("./notification")
+
+Example:
+    rails generate dashboard_base_generator Thing
+
+    This will create:
+        what/will/it/create
