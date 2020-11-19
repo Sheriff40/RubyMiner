@@ -60,7 +60,7 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
       @<%= singular_name%> = <%= singular_name.titleize%>.find_by_id(params[:id])
     end
 
-    def  @<%= singular_name%>_params
+    def <%= singular_name%>_params
 
     end
 end
