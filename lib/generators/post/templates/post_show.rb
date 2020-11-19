@@ -76,7 +76,7 @@
                         - comment.reply_comments.each do |reply|
                           .card.card-body
                             div style="margin-left: 30px"
-                              - user = comment.user
+                              - user = reply.user
                               p
                                 - if user.avatar.attached?
                                   =image_tag user.avatar, width:"25px", class:"rounded-circle mr-3"

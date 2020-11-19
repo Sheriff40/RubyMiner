@@ -18,7 +18,7 @@ class DashboardBaseGenerator < Rails::Generators::Base
   end
 
   def create_dashboard_index
-    copy_file "dashboard_index.rb", "app/views/dashboards/index.html.slim"
+    copy_file "dashboard_index.html.rb", "app/views/dashboards/index.html.slim"
   end
 
   def create_login_page

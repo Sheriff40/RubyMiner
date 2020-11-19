@@ -1,7 +1,6 @@
 document.addEventListener("turbolinks:load", function () {
   let noticeTitles = document.querySelectorAll(".noticeTitles");
   let token = $("meta[name='csrf-token']").attr("content");
-
   noticeTitles.forEach(function (data) {
     data.addEventListener("click", function () {
       let userNoticeId = this.getAttribute("usernoticeId");
@@ -11,10 +10,10 @@ document.addEventListener("turbolinks:load", function () {
   });
 
   // Change the status of the notification from unseen to seen
-  function changeNotificationSeenStatus(userNoticeId) {
+  function changeNotificationSeenStatus(notice_student) {
     let request = $.ajax({
                              method: 'PUT',
-                             url: '/user_notices/' + userNoticeId,
+                             url: '/user_notices/' + notice_student,
                              data: {authenticity_token: token}
                          });
 

@@ -29,6 +29,9 @@ Description:
       Add in application.js
         require("./notification")
 
+    Step 5:
+      Include header in your dashboard layout page
+
 Example:
     rails generate dashboard_base_generator Thing
 
