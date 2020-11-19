@@ -1,8 +1,6 @@
 # Rubyminer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubyminer`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The gem ruby miners, adds a custom view for your scaffolds. Also blog and notification generators are available if you want to include notification and blog system in your application.
 
 ## Installation
 
