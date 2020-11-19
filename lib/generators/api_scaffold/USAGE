@@ -1,0 +1,22 @@
+Description:
+    Generates api controller for various models.
+
+    After running the generator, peform the following steps:
+
+    Step 1:
+        Add the following code in routes.rb
+        namespace :api do
+          namespace :v1 do
+            resources :your_resource
+          end
+        end
+
+    Step 2:
+        Permit the params in the API controller
+        params.permit(:your_first_attribute, :your_second_attribute)
+
+Example:
+    rails generate dashboard_base_generator Thing
+
+    This will create:
+        what/will/it/create

@@ -27,10 +27,10 @@
                   td = data.<%=attr.name %>
                 <% end %>
                   td
-                    span.action-btn
+                    span
                       = link_to data do
-                        i.fa.fa-eye
+                        i.fa.fa-eye.text-secondary
                       = link_to edit_<%=singular_name%>_path(data) do
-                        i.fa.fa-edit
+                        i.fa.fa-edit.text-primary.mx-1
                       = link_to data, data: { confirm: 'Are you sure?' }, method: :delete do
-                        i.fa.fa-trash
+                        i.fa.fa-trash.text-danger

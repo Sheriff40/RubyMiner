@@ -1,0 +1,23 @@
+Description:
+    Explain the generator
+
+    Step 1:
+      resources :posts do
+        resources :comments
+      end
+      resources :user_post_likes, only: :create
+
+    Step 2:
+      Add in application.js
+        require("./posts")
+
+    Step 3:
+      Add in user.rb
+        has_many :posts, dependent: :destroy
+        has_one_attached :avatar, dependent: :destroy
+
+Example:
+    rails generate blog
+
+    This will create:
+        what/will/it/create
