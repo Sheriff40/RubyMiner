@@ -43,4 +43,53 @@ class NotificationGenerator < Rails::Generators::Base
     copy_file "notification_javascript.rb", "app/javascript/packs/notification.js"
   end
 
+  def add_routes
+    file_path = "#{Rails.root}/config"
+    routes_files = File.readlines("#{file_path}/routes.rb")
+    routes_files.each.with_index(0) do |line,index|
+      if index != (routes_files.count - 1)
+        File.open("#{file_path}/routes_copy.rb","a") do |f|
+          f.write(line)
+        end
+      end
+    end
+    File.open("#{file_path}/routes_copy.rb","a") do |f|
+      f.write("\n\tresources :notices, only: :index \n\tresources :user_notices, only: :update \nend")
+    end
+    File.delete("#{file_path}/routes.rb")
+    File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")
+  end
+
+  def notifications_javascript
+    file_path = "#{Rails.root}/app/javascript/packs"
+    routes_files = File.readlines("#{file_path}/application.js")
+    routes_files.each do |line|
+      File.open("#{file_path}/application_copy.js","a") do |f|
+        f.write(line)
+      end
+    end
+    File.open("#{file_path}/application_copy.js","a") do |f|
+      f.write("\nrequire(\"./notification\")")
+    end
+    File.delete("#{file_path}/application.js")
+    File.rename("#{file_path}/application_copy.js","#{file_path}/application.js")
+  end
+
+  def copy_user_associations
+    file_path = "#{Rails.root}/app/models"
+    routes_files = File.readlines("#{file_path}/user.rb")
+    routes_files.each.with_index(0) do |line,index|
+      if index != (routes_files.count - 1)
+        File.open("#{file_path}/user_copy.rb","a") do |f|
+          f.write(line)
+        end
+      end
+    end
+    File.open("#{file_path}/user_copy.rb","a") do |f|
+      f.write("\n\thas_many :user_notices, dependent: :destroy\n\thas_many :notices, through: :user_notices\nend")
+    end
+    File.delete("#{file_path}/user.rb")
+    File.rename("#{file_path}/user_copy.rb","#{file_path}/user.rb")
+  end
+
 end

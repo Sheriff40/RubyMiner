@@ -82,4 +82,54 @@ class PostGenerator < Rails::Generators::Base
   def add_post_css
     copy_file "posts_css.rb", "app/assets/stylesheets/posts.scss"
   end
+
+  def add_routes
+    file_path = "#{Rails.root}/config"
+    routes_files = File.readlines("#{file_path}/routes.rb")
+    routes_files.each.with_index(0) do |line,index|
+      if index != (routes_files.count - 1)
+        File.open("#{file_path}/routes_copy.rb","a") do |f|
+          f.write(line)
+        end
+      end
+    end
+    File.open("#{file_path}/routes_copy.rb","a") do |f|
+      f.write("\n\tresources :posts do \n\t\t resources :comments \n\tend \n\tresources :user_post_likes, only: :create\nend")
+    end
+    File.delete("#{file_path}/routes.rb")
+    File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")
+  end
+
+  def post_javascript
+    file_path = "#{Rails.root}/app/javascript/packs"
+    routes_files = File.readlines("#{file_path}/application.js")
+    routes_files.each do |line|
+      File.open("#{file_path}/application_copy.js","a") do |f|
+        f.write(line)
+      end
+    end
+    File.open("#{file_path}/application_copy.js","a") do |f|
+      f.write("\nrequire(\"./posts\")")
+    end
+    File.delete("#{file_path}/application.js")
+    File.rename("#{file_path}/application_copy.js","#{file_path}/application.js")
+  end
+
+  def copy_user_associations
+    file_path = "#{Rails.root}/app/models"
+    routes_files = File.readlines("#{file_path}/user.rb")
+    routes_files.each.with_index(0) do |line,index|
+      if index != (routes_files.count - 1)
+        File.open("#{file_path}/user_copy.rb","a") do |f|
+          f.write(line)
+        end
+      end
+    end
+    File.open("#{file_path}/user_copy.rb","a") do |f|
+      f.write("\n\thas_many :posts, dependent: :destroy\n\thas_one_attached :avatar, dependent: :destroy\nend")
+    end
+    File.delete("#{file_path}/user.rb")
+    File.rename("#{file_path}/user_copy.rb","#{file_path}/user.rb")
+  end
+
 end
