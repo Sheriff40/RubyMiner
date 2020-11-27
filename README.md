@@ -20,7 +20,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+For notifications run the generator:
+    ``$ rails g notification``
+    
+This will give you all the required models and controller that gives your app the feature to use notification. Notifications will be specific to users. The developer can modify the message and the url that the notification is meant to redirect from this module. 
 
 ## Development
 
