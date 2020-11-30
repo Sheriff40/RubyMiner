@@ -40,7 +40,7 @@ class NotificationGenerator < Rails::Generators::Base
   end
 
   def notice_javascript
-    copy_file "notification_javascript.rb", "app/javascript/packs/notification.js"
+    copy_file "notification_javascript.rb", "app/javascript/packs/s.js"
   end
 
   def add_routes
@@ -69,25 +69,47 @@ class NotificationGenerator < Rails::Generators::Base
       end
     end
     File.open("#{file_path}/application_copy.js","a") do |f|
-      f.write("\nrequire(\"./notification\")")
+      f.write("\nrequire(\"./s\")")
     end
     File.delete("#{file_path}/application.js")
     File.rename("#{file_path}/application_copy.js","#{file_path}/application.js")
   end
 
   def copy_user_associations
+    contains_private_method = false
+
     file_path = "#{Rails.root}/app/models"
-    routes_files = File.readlines("#{file_path}/user.rb")
-    routes_files.each.with_index(0) do |line,index|
+    user_file_contents = File.readlines("#{file_path}/user.rb")
+
+    user_file_contents.each.with_index(0) do |line,index|
+      if line.strip == "private"
+        contains_private_method = true
+
+        # Copy the association before the private method
+        File.open("#{file_path}/user_copy.rb","a") do |f|
+          f.write("\n\thas_many :user_notices, dependent: :destroy\n\thas_many :notices, through: :user_notices\n\n")
+        end
+      end
+
+      # Continue copying the file until the last end keyword is encountered
       if index != (routes_files.count - 1)
         File.open("#{file_path}/user_copy.rb","a") do |f|
           f.write(line)
         end
       end
     end
-    File.open("#{file_path}/user_copy.rb","a") do |f|
-      f.write("\n\thas_many :user_notices, dependent: :destroy\n\thas_many :notices, through: :user_notices\nend")
+
+    # Add associations if there is no private method and the copying has reached the last end keyword
+    if !contains_private_method
+      File.open("#{file_path}/user_copy.rb","a") do |f|
+        f.write("\n\thas_many :user_notices, dependent: :destroy\n\thas_many :notices, through: :user_notices")
+      end
     end
+
+    File.open("#{file_path}/user_copy.rb","a") do |f|
+      f.write("\nend")
+    end
+
     File.delete("#{file_path}/user.rb")
     File.rename("#{file_path}/user_copy.rb","#{file_path}/user.rb")
   end
