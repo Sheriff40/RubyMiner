@@ -31,7 +31,7 @@ class NotificationGenerator < Rails::Generators::Base
 
   def create_notice_migration
     get_current_date
-    copy_file "notice_migration.rb", "db/migrate/#{@current_date + 2}_create_notices.rb"
+    copy_file "notice_migration.rb", "db/migrate/#{@current_date + 1}_create_notices.rb"
   end
 
   def create_user_notices_migration
@@ -40,7 +40,7 @@ class NotificationGenerator < Rails::Generators::Base
   end
 
   def notice_javascript
-    copy_file "notification_javascript.rb", "app/javascript/packs/s.js"
+    copy_file "notification_javascript.rb", "app/javascript/packs/notification.js"
   end
 
   def add_routes
@@ -69,7 +69,7 @@ class NotificationGenerator < Rails::Generators::Base
       end
     end
     File.open("#{file_path}/application_copy.js","a") do |f|
-      f.write("\nrequire(\"./s\")")
+      f.write("\nrequire(\"./notification\")")
     end
     File.delete("#{file_path}/application.js")
     File.rename("#{file_path}/application_copy.js","#{file_path}/application.js")
@@ -92,7 +92,7 @@ class NotificationGenerator < Rails::Generators::Base
       end
 
       # Continue copying the file until the last end keyword is encountered
-      if index != (routes_files.count - 1)
+      if index != (user_file_contents.count - 1)
         File.open("#{file_path}/user_copy.rb","a") do |f|
           f.write(line)
         end

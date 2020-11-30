@@ -132,7 +132,7 @@ class PostGenerator < Rails::Generators::Base
       end
 
       # Continue copying the file until the last end keyword is encountered
-      if index != (routes_files.count - 1)
+      if index != (user_file_contents.count - 1)
         File.open("#{file_path}/user_copy.rb","a") do |f|
           f.write(line)
         end
