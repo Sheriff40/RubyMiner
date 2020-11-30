@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/generators/notification/USAGE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/notification/USAGE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/post/USAGE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/USAGE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rubyminer-0.2.gem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/notification/templates/notice_index.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/notification/templates/notice_index.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/post/USAGE">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -49,8 +45,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/notification/USAGE">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="315">
               <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/generators/notification/templates/notice_index.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -102,7 +107,6 @@
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/user_notice.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/notices_controller.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/user_notices_controller.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/notification/templates/notice_index.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/notice_migration.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/user_notice_migration.rb" />
         <option value="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" />
@@ -120,6 +124,7 @@
         <option value="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/USAGE" />
         <option value="$PROJECT_DIR$/lib/generators/post/USAGE" />
+        <option value="$PROJECT_DIR$/lib/generators/notification/templates/notice_index.rb" />
       </list>
     </option>
   </component>
@@ -158,6 +163,14 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="generators" type="462c0819:PsiDirectoryNode" />
               <item name="notification" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
@@ -278,12 +291,12 @@
       <workItem from="1606458989385" duration="1457000" />
       <workItem from="1606480571080" duration="675000" />
       <workItem from="1606548134939" duration="74000" />
-      <workItem from="1606724319011" duration="4435000" />
+      <workItem from="1606724319011" duration="4667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60156000" />
+    <option name="totallyTimeSpent" value="60388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,7 +337,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/generators/ahsdhasd/pode123.rb" />
     <entry file="file://$PROJECT_DIR$/rubyminer.gemspec">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -633,17 +645,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/USAGE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/notification/USAGE">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="315">
           <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/USAGE">
+    <entry file="file://$PROJECT_DIR$/lib/generators/notification/templates/notice_index.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="225">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
         </state>
       </provider>
     </entry>
