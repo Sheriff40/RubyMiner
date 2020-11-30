@@ -31,7 +31,7 @@ class NotificationGenerator < Rails::Generators::Base
 
   def create_notice_migration
     get_current_date
-    copy_file "notice_migration.rb", "db/migrate/#{@current_date + 2}_create_notices.rb"
+    copy_file "notice_migration.rb", "db/migrate/#{@current_date + 1}_create_notices.rb"
   end
 
   def create_user_notices_migration
@@ -76,18 +76,40 @@ class NotificationGenerator < Rails::Generators::Base
   end
 
   def copy_user_associations
+    contains_private_method = false
+
     file_path = "#{Rails.root}/app/models"
-    routes_files = File.readlines("#{file_path}/user.rb")
-    routes_files.each.with_index(0) do |line,index|
-      if index != (routes_files.count - 1)
+    user_file_contents = File.readlines("#{file_path}/user.rb")
+
+    user_file_contents.each.with_index(0) do |line,index|
+      if line.strip == "private"
+        contains_private_method = true
+
+        # Copy the association before the private method
+        File.open("#{file_path}/user_copy.rb","a") do |f|
+          f.write("\n\thas_many :user_notices, dependent: :destroy\n\thas_many :notices, through: :user_notices\n\n")
+        end
+      end
+
+      # Continue copying the file until the last end keyword is encountered
+      if index != (user_file_contents.count - 1)
         File.open("#{file_path}/user_copy.rb","a") do |f|
           f.write(line)
         end
       end
     end
-    File.open("#{file_path}/user_copy.rb","a") do |f|
-      f.write("\n\thas_many :user_notices, dependent: :destroy\n\thas_many :notices, through: :user_notices\nend")
+
+    # Add associations if there is no private method and the copying has reached the last end keyword
+    if !contains_private_method
+      File.open("#{file_path}/user_copy.rb","a") do |f|
+        f.write("\n\thas_many :user_notices, dependent: :destroy\n\thas_many :notices, through: :user_notices")
+      end
     end
+
+    File.open("#{file_path}/user_copy.rb","a") do |f|
+      f.write("\nend")
+    end
+
     File.delete("#{file_path}/user.rb")
     File.rename("#{file_path}/user_copy.rb","#{file_path}/user.rb")
   end
