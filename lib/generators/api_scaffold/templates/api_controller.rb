@@ -61,6 +61,6 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
     end
 
     def <%= singular_name%>_params
-
+      params.require(:<%= singular_name %>).permit(:<%=self.args.join(",:")%>)
     end
 end
