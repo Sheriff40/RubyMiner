@@ -1,7 +1,6 @@
-class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
+class Api::V1::<%= plural_name.titleize %>Controller < ApiController
 
-  skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
-
+  before_action :verify_jwt_token
 
   before_action :set_<%= singular_name %>, only: [:update, :destroy, :show]
 
@@ -23,7 +22,7 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
     if @<%= singular_name%>.save
       render json: @<%= singular_name%>
     else
-      render json: {message: "Could not save"}, status: 500
+      render json: {message: @<%=singular_name%>.errors.messages}, status: 500
     end
 
   end
@@ -33,7 +32,7 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
       if @<%= singular_name%>.update(<%= singular_name%>_params)
         render json: @<%= singular_name%>
       else
-        render json: {message: "Could not update"}, status: 500
+        render json: {message: @<%=singular_name%>.errors.messages}, status: 500
       end
     else
       render json: {message: "No records found"}, status: 400
@@ -46,7 +45,7 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
       if @<%= singular_name%>.destroy
         render json: {message: "Destroyed"}
       else
-        render json: {message: "Could not delete"}, status: 500
+        render json: {message: @<%=singular_name%>.errors.messages}, status: 500
       end
     else
       render json: {message: "No records found"}, status: 400
