@@ -11,6 +11,8 @@ class ApiController < ApplicationController
     header_param = request.headers['Authorization']
 
     if !header_param.nil?
+
+      # Send token in the form "Bearer token"
       token = header_param.split(" ")[1]
 
       begin
@@ -21,9 +23,7 @@ class ApiController < ApplicationController
     else
       render json: {message: "Unauthorized Access"}, status: :unauthorized
     end
-
   end
-
 
   def user_log_in
     @user = User.find_by_email(params[:email])

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/parent_api.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" afterDir="false" />
-    </list>
+    <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="705">
               <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ruby_miners_template.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -108,7 +112,6 @@
         <option value="$PROJECT_DIR$/lib/generators/post/templates/post_show.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/header.html.slim" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/notification_javascript.rb" />
-        <option value="$PROJECT_DIR$/../ruby_miners_template.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/header.rb" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_controller.rb" />
         <option value="$PROJECT_DIR$/lib/generators/post/post_generator.rb" />
@@ -119,6 +122,7 @@
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/templates/parent_api.rb" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" />
+        <option value="$PROJECT_DIR$/../ruby_miners_template.rb" />
       </list>
     </option>
   </component>
@@ -182,7 +186,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ruby_miners_template.rb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -287,12 +291,12 @@
       <workItem from="1606548134939" duration="74000" />
       <workItem from="1606724319011" duration="4667000" />
       <workItem from="1606804233996" duration="1813000" />
-      <workItem from="1606821155450" duration="239000" />
+      <workItem from="1606821155450" duration="335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63849000" />
+    <option name="totallyTimeSpent" value="63945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,7 +311,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49575552" visible="true" weight="0.38148445" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49575552" visible="true" weight="0.38148445" />
       <window_info id="Structure" order="1" sideWeight="0.5042445" side_tool="true" weight="0.34397447" />
       <window_info id="Favorites" order="2" sideWeight="0.50254667" side_tool="true" weight="0.33280128" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -320,7 +324,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32427844" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32427844" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -477,13 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ruby_miners_template.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/header.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/dashboard_index.html.rb">
       <provider selected="true" editor-type-id="text-editor">
@@ -593,6 +590,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ruby_miners_template.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>

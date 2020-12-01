@@ -24,7 +24,6 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApiController
     else
       render json: {message: @<%=singular_name%>.errors.messages}, status: 500
     end
-
   end
 
   def update
