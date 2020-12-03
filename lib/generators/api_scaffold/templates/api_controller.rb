@@ -5,8 +5,8 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
   before_action :set_<%= singular_name %>, only: [:update, :destroy, :show]
 
   def index
-    if !params.nil?
-      query_params = request.query_parameters
+    query_params = request.query_parameters
+    if !params.empty?
       begin
         @<%=plural_name %> = <%=singular_name %>.find_by(query_params)
         render json: @<%=plural_name %>

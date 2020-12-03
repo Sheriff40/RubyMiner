@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="225">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -262,12 +260,12 @@
       <workItem from="1606724319011" duration="4667000" />
       <workItem from="1606891811393" duration="607000" />
       <workItem from="1606982456551" duration="1226000" />
-      <workItem from="1606989907671" duration="1721000" />
+      <workItem from="1606989907671" duration="2960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65376000" />
+    <option name="totallyTimeSpent" value="66615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,8 +280,8 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49575552" visible="true" weight="0.40143654" />
-      <window_info id="Structure" order="1" sideWeight="0.5042445" side_tool="true" weight="0.34397447" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4924623" visible="true" weight="0.40063846" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.50753766" side_tool="true" visible="true" weight="0.40063846" />
       <window_info id="Favorites" order="2" sideWeight="0.50254667" side_tool="true" weight="0.33280128" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
@@ -564,8 +562,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        <state relative-caret-position="225">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
         </state>
       </provider>
     </entry>
