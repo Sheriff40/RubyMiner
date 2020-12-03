@@ -8,7 +8,7 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
     query_params = request.query_parameters
     if !params.empty?
       begin
-        @<%=plural_name %> = <%=singular_name %>.find_by(query_params)
+        @<%=plural_name %> = <%=singular_name %>.where(query_params)
         render json: @<%=plural_name %>
       rescue
         render json: {message: "Invalid query parameters"}, status: 404
