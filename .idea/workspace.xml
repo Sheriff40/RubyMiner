@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -27,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -91,12 +93,12 @@
         <option value="$PROJECT_DIR$/../ruby_miners_template.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/header.rb" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_controller.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/post/post_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/USAGE" />
         <option value="$PROJECT_DIR$/lib/generators/post/USAGE" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/notice_index.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" />
       </list>
     </option>
@@ -145,12 +147,6 @@
               <item name="api_scaffold" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -160,7 +156,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/myProject/plastic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -264,11 +260,14 @@
       <workItem from="1606480571080" duration="675000" />
       <workItem from="1606548134939" duration="74000" />
       <workItem from="1606724319011" duration="4667000" />
+      <workItem from="1606891811393" duration="607000" />
+      <workItem from="1606982456551" duration="1226000" />
+      <workItem from="1606989907671" duration="1721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61203000" />
+    <option name="totallyTimeSpent" value="65376000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -283,7 +282,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49575552" visible="true" weight="0.36871508" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49575552" visible="true" weight="0.40143654" />
       <window_info id="Structure" order="1" sideWeight="0.5042445" side_tool="true" weight="0.34397447" />
       <window_info id="Favorites" order="2" sideWeight="0.50254667" side_tool="true" weight="0.33280128" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -296,7 +295,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32427844" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32427844" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -309,20 +308,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rubyminer.gemspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="33" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/user_post_likes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -442,65 +427,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notices_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/user_notices_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice_index.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/user_notice_migration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice_migration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/user_notice.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notices_controller.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/user_notices_controller.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice_index.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/user_notice_migration.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice_migration.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/user_notice.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/USAGE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notification_javascript.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notification_javascript.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_show.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
@@ -515,13 +452,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/header.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/header.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/dashboard_index.html.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -540,13 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="54" lean-forward="true" selection-end-line="39" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -575,20 +499,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/USAGE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/notification_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="94" column="8" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/USAGE" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/s/notification_generator.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/notification/notification_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
@@ -624,17 +536,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4860" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
         </state>
       </provider>
     </entry>
