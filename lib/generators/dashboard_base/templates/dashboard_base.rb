@@ -69,24 +69,7 @@ javascript:
             }
         }, 5000)
         dataTable = $('#example-table').DataTable({
-      "lengthChange": false,
-      "bPaginate": false,
-      "bInfo": false
+          processing: true,
+          serverSide: true,
       });
-
-      let search = $('.dataTables_filter')
-      search.addClass('d-inline')
-      search.find("label")[0].firstChild.data = ""
-      search.find("input").attr("placeholder", "Search Here")
-      var searchFilter = document.querySelector('.search-filter')
-      searchFilter.append(search[0])
-      let searches = document.querySelectorAll('#example-table_filter');
-      if(searches.length == 2){
-          searches[0].remove();
-      let exampleTable = $('#example-table_filter');
-      exampleTable.addClass('d-inline');
-      exampleTable.find("label")[0].firstChild.data = "";
-      exampleTable.find("input").attr("placeholder", "Search Here");
-      searchFilter.append(exampleTable[0]);
-      }
     });
