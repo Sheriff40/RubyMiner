@@ -10,7 +10,7 @@
             i.fas.fa-plus
             |&nbsp;Add <%=singular_name.titleize%>
 
-          table.table.table-hover.bg-white.shadow.p-3.mb-5.bg-white.rounded.text-center#example-table
+          table.table.table-hover.bg-white.shadow.p-3.mb-5.bg-white.rounded.text-center#example-table data= {url: <%=plural_name%>_path(format: :json)}
             thead.bg-light.text-secondary
               tr
                 th S.N.
@@ -20,17 +20,3 @@
                 th Actions
 
             tbody
-              - @<%= plural_name%>.each.with_index(1) do |data,index|
-                tr
-                  td = index
-                <% attributes.each do |attr| %>
-                  td = data.<%=attr.name %>
-                <% end %>
-                  td
-                    span
-                      = link_to data do
-                        i.fa.fa-eye.text-secondary
-                      = link_to edit_<%=singular_name%>_path(data) do
-                        i.fa.fa-edit.text-primary.mx-1
-                      = link_to data, data: { confirm: 'Are you sure?' }, method: :delete do
-                        i.fa.fa-trash.text-danger

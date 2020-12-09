@@ -2,7 +2,10 @@ class <%= class_name.pluralize %>Controller < DashboardBaseController
   before_action :set_<%=singular_name%>, only: [:show, :edit, :update, :destroy]
 
   def index
-    @<%=plural_name%> = <%=class_name%>.all
+    respond_to do |format|
+      format.json {render json: <%=singular_name.titleize%>DataTable.new(view_context)}
+      format.html
+    end
   end
 
   def show
