@@ -29,23 +29,23 @@ class PostGenerator < Rails::Generators::Base
   end
 
   def new_post_page
-    copy_file "post_new.rb", "app/views/posts/new.html.slim"
+    copy_file "post_new.rb", "app/views/posts/new.rb"
   end
 
   def edit_post_page
-    copy_file "post_edit.rb", "app/views/posts/edit.html.slim"
+    copy_file "post_edit.rb", "app/views/posts/edit.rb"
   end
 
   def form_post_page
-    copy_file "post_form.rb", "app/views/posts/_form.html.slim"
+    copy_file "post_form.rb", "app/views/posts/form.rb"
   end
 
   def index_post_page
-    copy_file "post_index.rb", "app/views/posts/index.html.slim"
+    copy_file "post_index.rb", "app/views/posts/index.rb"
   end
 
   def show_post_page
-    copy_file "post_show.rb", "app/views/posts/show.html.slim"
+    copy_file "post_show.rb", "app/views/posts/show.rb"
   end
 
   def sidebar_post_page
@@ -53,7 +53,7 @@ class PostGenerator < Rails::Generators::Base
   end
 
   def comment_new_page
-    copy_file "comments_new.rb", "app/views/comments/_form.html.slim"
+    copy_file "comments_new.rb", "app/views/comments/form.rb"
   end
 
   def blogs_javascript
