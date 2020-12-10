@@ -3,7 +3,7 @@
     .d-flex.align-content-center.mt-1.mb-3
       p.text-center.pb-0.mb-0
     nav
-      #nav-tab.nav.navbar-nav.sidebar-nav role_responsibility_system="tablist"
+      #nav-tab.nav.navbar-nav.sidebar-nav role="tablist"
         a.nav-item.nav-link.text-secondary.pl-2.fa-sm.font-weight-bold.mb-2 href=root_path  class=(controller_name=='dashboard_base' ? 'active' : '')
           i.fa.fa-home.mr-3
           | Dashboard

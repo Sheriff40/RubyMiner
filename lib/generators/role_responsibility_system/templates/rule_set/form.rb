@@ -1,7 +1,6 @@
-= content_for :title, 'CDMIS | RULE SET'
 h4.d-inline-block.sub-heading
   i.fa.fa-cog.mr-3
-  =t('rule_set')
+  = Rule Set
 hr
 .row
   - @controllers.each do |controller|

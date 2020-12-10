@@ -18,7 +18,7 @@ class NotificationGenerator < Rails::Generators::Base
   end
 
   def create_notice_index
-    copy_file "notice_index.rb", "app/views/notices/index.rb"
+    copy_file "notice_index.rb", "app/views/notices/index.html.slim"
   end
 
   def create_header_partial
