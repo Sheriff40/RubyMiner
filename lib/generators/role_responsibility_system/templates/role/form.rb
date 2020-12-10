@@ -21,8 +21,8 @@
                 - @models[model].each do |action|
                   hr
                     = "#{action.titleize}:"
-                  - if @role.persisted? && !@role.role_and_responsibility.role_rule.nil? && eval(@role.role_and_responsibility.role_rule).include?(model)
-                    - action_value = eval(@role.role_and_responsibility.role_rule)[model][action]
+                  - if @role_responsibility_system.persisted? && !@role_responsibility_system.role_and_responsibility.role_rule.nil? && eval(@role_responsibility_system.role_and_responsibility.role_rule).include?(model)
+                    - action_value = eval(@role_responsibility_system.role_and_responsibility.role_rule)[model][action]
                     .text-center
                       | Activate:
                       input.mr-2.ml-1  type = "radio" value="true" checked=(action_value=="true" ? "true" : nil) name= "[role_and_responsibility][#{model}][#{action}]"
@@ -36,5 +36,5 @@
                       input.ml-1 type = "radio" value="false" name= "[role_and_responsibility][#{model}][#{action}]"
   .col-md-12
     hr
-    - btn = @role.persisted? ? "Edit" : "Add"
+    - btn = @role_responsibility_system.persisted? ? "Edit" : "Add"
     = f.submit btn, class: 'btn btn-main'

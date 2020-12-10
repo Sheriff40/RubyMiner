@@ -1,3 +1,3 @@
 class RoleAndResponsibility < ApplicationRecord
-  belongs_to :role
+  belongs_to :role_responsibility_system
 end

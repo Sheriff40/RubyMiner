@@ -2,35 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/USAGE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/role_generator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/edit.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/form.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/index.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/new.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/role.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/role_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/role_migrate.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role/templates/show.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role_and_responsibility/USAGE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role_and_responsibility/role_and_responsibility_generator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_migrate.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_model.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/USAGE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/rule_set_generator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/edit.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/form.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/new.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_js.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_migrate.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/generators/rule_set/templates/show.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/role_responsiblity_system_generator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/assign_role.htm.slim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/edit.html.slim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/form.html.slim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/index.html.slim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/new.html.slim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/users_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user_role/user_role.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user_role/user_role_migrate.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rubyminer-0.2.gem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/USAGE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/USAGE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/role_generator.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/edit.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/edit.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/form.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/index.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/index.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/new.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/new.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/role.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/role.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/role_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/role_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/role_migrate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/role_migrate.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role/templates/show.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/show.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role_and_responsibility/USAGE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role_and_responsibility/role_and_responsibility_generator.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_migrate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role_and_responsibility/role_and_responsibility_migrate.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_model.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role_and_responsibility/role_and_responsibility_model.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/USAGE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/rule_set_generator.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/edit.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/edit.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/form.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/new.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/new.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_js.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set_js.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_migrate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set_migrate.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/rule_set/templates/show.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/show.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +50,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/generators/role/role_generator.rb">
+        <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/role_responsiblity_system_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285">
-              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+            <state relative-caret-position="435">
+              <caret line="199" column="3" lean-forward="true" selection-start-line="199" selection-start-column="3" selection-end-line="199" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/templates/slim/scaffold/_form.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="15" selection-end-line="31" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/templates/slim/scaffold/new.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="11" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user_role/user_role.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -66,16 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/posts_css.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_index.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.html.slim" />
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_form.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/post/templates/post_sidebar.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/notification/templates/notice.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/notification/templates/user_notice.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/notification/templates/notices_controller.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/notification/templates/user_notices_controller.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/notice_migration.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/templates/user_notice_migration.rb" />
         <option value="$PROJECT_DIR$/lib/generators/dashboard_base/templates/dashboard_index.rb" />
@@ -116,7 +139,17 @@
         <option value="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_migrate.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_and_responsibility/role_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_and_responsibility/role_and_responsibility_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/role/templates/user_role.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/role/templates/user_role_migrate.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role/role_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/role_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/index.html.slim" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/users_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/new.html.slim" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/edit.html.slim" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/_form.html.slim" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/assign_role.htm.slim" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/role_responsiblity_system_generator.rb" />
       </list>
     </option>
   </component>
@@ -154,15 +187,45 @@
               <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="generators" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
+              <item name="role_responsibility_system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
               <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="generators" type="462c0819:PsiDirectoryNode" />
-              <item name="role" type="462c0819:PsiDirectoryNode" />
+              <item name="role_responsibility_system" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+              <item name="role_responsibility_system" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="slim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rubyminer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rubyminer" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="slim" type="462c0819:PsiDirectoryNode" />
+              <item name="scaffold" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,8 +242,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/generators" />
-      <recent name="$PROJECT_DIR$/lib/generators/notification" />
+      <recent name="$PROJECT_DIR$/lib/generators/role/templates/rule_set" />
+      <recent name="$PROJECT_DIR$/lib/generators/role/templates/user_role" />
+      <recent name="$PROJECT_DIR$/lib/generators/role/templates/role" />
+      <recent name="$PROJECT_DIR$/lib/generators/role/templates/role_and_responsibility" />
+      <recent name="$PROJECT_DIR$/lib/generators/role/templates" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/generators/role_and_responsibility" />
@@ -278,11 +344,14 @@
       <workItem from="1606548134939" duration="74000" />
       <workItem from="1606724319011" duration="4667000" />
       <workItem from="1607510021348" duration="737000" />
+      <workItem from="1607579645775" duration="680000" />
+      <workItem from="1607581007418" duration="3411000" />
+      <workItem from="1607590408805" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70821000" />
+    <option name="totallyTimeSpent" value="75096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,9 +366,9 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48994976" visible="true" weight="0.37509975" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48994976" visible="true" weight="0.3942538" />
       <window_info id="Structure" order="1" sideWeight="0.51005024" side_tool="true" weight="0.36871508" />
-      <window_info id="Favorites" order="2" sideWeight="0.50254667" side_tool="true" weight="0.33280128" />
+      <window_info id="Favorites" order="2" sideWeight="0.51005024" side_tool="true" weight="0.38148445" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -323,42 +392,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice_migration.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notice.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/user_notice.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/USAGE">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/notification_javascript.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/post_show.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ruby_miners_template.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/templates/header.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/dashboard_index.html.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/dashboard_base_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/dashboard_base.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -416,13 +449,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/data_table/data_table_server_side.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/templates/login.rb" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/USAGE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/USAGE" />
     <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
@@ -444,112 +471,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/templates/rails/scaffold_controller/controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/data_table_ss_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/templates/data_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/data_table_ss_generator.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/templates/data_table.rb" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/comment.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_migrate.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/comment.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set_migrate.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_js.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set_js.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/form.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/form.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/edit.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/edit.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role/templates/role.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/role.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/templates/rule_set_controller.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/rule_set_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="847">
           <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role/templates/role_controller.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/role_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role/templates/index.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/index.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role/templates/edit.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/edit.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role/templates/form.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/form.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role/templates/new.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role/new.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/new.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/new.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -557,38 +561,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_model.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role_and_responsibility/role_and_responsibility_model.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_migrate.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/role_and_responsibility/role_and_responsibility_migrate.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role_and_responsibility/role_and_responsibility_generator.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user_role/user_role_migrate.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/rule_set_generator.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_and_responsibility/role_and_responsibility_generator.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/generators/rule_set/rule_set_generator.rb" />
+    <entry file="file://$PROJECT_DIR$/lib/templates/rails/scaffold_controller/controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role/role_generator.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/new.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        <state relative-caret-position="75">
+          <caret line="5" column="74" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/edit.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/assign_role.htm.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/role_responsiblity_system_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="199" column="3" lean-forward="true" selection-start-line="199" selection-start-column="3" selection-end-line="199" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/templates/slim/scaffold/_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="15" selection-end-line="31" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/templates/slim/scaffold/new.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user_role/user_role.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
