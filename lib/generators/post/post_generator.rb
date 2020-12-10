@@ -37,7 +37,7 @@ class PostGenerator < Rails::Generators::Base
   end
 
   def form_post_page
-    copy_file "post_form.rb", "app/views/posts/form.html.slim"
+    copy_file "post_form.rb", "app/views/posts/_form.html.slim"
   end
 
   def index_post_page
@@ -53,7 +53,7 @@ class PostGenerator < Rails::Generators::Base
   end
 
   def comment_new_page
-    copy_file "comments_new.rb", "app/views/comments/form.html.slim"
+    copy_file "comments_new.rb", "app/views/comments/_form.html.slim"
   end
 
   def blogs_javascript

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/USAGE" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/USAGE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rubyminer-0.2.gem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,24 +49,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/rubyminer/version.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/USAGE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -78,10 +58,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
+        <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-628">
-              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <state relative-caret-position="-148">
+              <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/comment.rb">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -146,11 +140,11 @@
         <option value="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb" />
         <option value="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/post/post_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/form.rb" />
         <option value="$PROJECT_DIR$/lib/rubyminer/version.rb" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/USAGE" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/post/post_generator.rb" />
       </list>
     </option>
   </component>
@@ -188,14 +182,14 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="generators" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api_scaffold" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="post" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="rubyminer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="generators" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api_scaffold" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="post" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
@@ -376,12 +370,12 @@
       <workItem from="1607581007418" duration="3411000" />
       <workItem from="1607590408805" duration="9000" />
       <workItem from="1607590520429" duration="1327000" />
-      <workItem from="1607597325481" duration="1940000" />
+      <workItem from="1607597325481" duration="3003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78903000" />
+    <option name="totallyTimeSpent" value="79966000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,9 +388,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48994976" visible="true" weight="0.41580206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48994976" visible="true" weight="0.41580206" />
       <window_info id="Structure" order="1" sideWeight="0.51005024" side_tool="true" weight="0.36871508" />
       <window_info id="Favorites" order="2" sideWeight="0.51005024" side_tool="true" weight="0.38148445" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,7 +402,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32258064" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32258064" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -422,8 +415,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/USAGE" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/s/notification_generator.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/post/USAGE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -649,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="55" column="67" selection-start-line="55" selection-start-column="67" selection-end-line="55" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/form.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -687,6 +671,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/comment.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/templates/comments_new.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/api_scaffold_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -694,10 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb">
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-628">
-          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        <state relative-caret-position="-148">
+          <caret line="55" column="54" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="54" />
         </state>
       </provider>
     </entry>
