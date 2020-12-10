@@ -1,6 +1,6 @@
 h4.d-inline-block.sub-heading
   i.fa.fa-cog.mr-3
-  = Rule Set
+  | Rule Set
 hr
 .row
   - @controllers.each do |controller|
@@ -36,7 +36,7 @@ hr
                     button.p-0.btn.text-danger.d-inline.ml-1 action="#{action}" class="removeAction" controller="#{@model_name}"
                       | X
 
-button class= "btn btn-main mt-4" id= "finalizeRule" Save
+button class= "btn-dark btn-sm my-4" id= "finalizeRule" Save
 
 css:
   .selected{

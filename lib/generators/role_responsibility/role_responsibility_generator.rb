@@ -1,41 +1,44 @@
-class RoleGenerator < Rails::Generators::Base
+class RoleResponsibilityGenerator < Rails::Generators::Base
 
   require 'date'
 
   source_root File.expand_path('templates', __dir__)
 
+# File for role_responsibility view, migration, and controller
 
-# File for role_responsibility_system view, migration, and controller
+  def get_current_date
+    @current_date = DateTime.now.strftime("%Y%m%d%H%m%S").to_i
+  end
 
   def role_model
-    copy_file "role_responsibility_system.rb", "app/models/role_responsibility_system.rb"
+    copy_file "role/role.rb", "app/models/role.rb"
   end
 
   def role_controller
-    copy_file "role_controller.rb", "app/controller/roles_controller.rb"
+    copy_file "role/role_controller.rb", "app/controllers/roles_controller.rb"
   end
 
   def role_migrate
-    copy_file "role_migrate.rb", "db/migrate/#{@current_date + 1}_create_roles.rb"
+    copy_file "role/role_migrate.rb", "db/migrate/#{@current_date + 1}_create_roles.rb"
   end
 
   def role_new_page
-    copy_file "new.rb", "app/views/roles/new.rb"
+    copy_file "role/new.rb", "app/views/roles/new.html.slim"
   end
 
   def role_edit_page
-    copy_file "edit.rb", "app/views/roles/edit.rb"
-    end
+    copy_file "role/edit.rb", "app/views/roles/edit.html.slim"
+  end
 
   def role_form_page
-    copy_file "form.rb", "app/views/roles/form.rb"
+    copy_file "role/form.rb", "app/views/roles/_form.html.slim"
   end
 
   def role_index
-    copy_file "index.rb", "app/views/roles/index.slim"
+    copy_file "role/index.rb", "app/views/roles/index.html.slim"
   end
 
-  # Routes for roles
+# Routes for roles
   def add_routes
     file_path = "#{Rails.root}/config"
     routes_files = File.readlines("#{file_path}/routes.rb")
@@ -53,7 +56,7 @@ class RoleGenerator < Rails::Generators::Base
     File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")
   end
 
-  # User associations with roles and user_roles
+# User associations with roles and user_roles
   def copy_user_associations
     contains_private_method = false
 
@@ -100,27 +103,31 @@ class RoleGenerator < Rails::Generators::Base
   end
 
   def rule_set_controller
-    copy_file "rule_set/rule_set_controller.rb", "app/controller/rule_sets_controller.rb"
+    copy_file "rule_set/rule_set_controller.rb", "app/controllers/rule_sets_controller.rb"
   end
 
   def rule_set_migrate
-    copy_file "rule_set/rule_set_migrate.rb", "db/migrate/#{@current_date + 1}_create_rule_sets.rb"
+    copy_file "rule_set/rule_set_migrate.rb", "db/migrate/#{@current_date + 2}_create_rule_sets.rb"
   end
 
   def rule_set_new_page
-    copy_file "rule_set/new.rb", "app/views/rule_sets/new.rb"
+    copy_file "rule_set/new.rb", "app/views/rule_sets/new.html.slim"
   end
 
   def rule_set_edit_page
-    copy_file "rule_set/edit.rb", "app/views/rule_sets/edit.rb"
+    copy_file "rule_set/edit.rb", "app/views/rule_sets/edit.html.slim"
   end
 
   def rule_set_form_page
-    copy_file "rule_set/form.rb", "app/views/rule_sets/form.rb"
+    copy_file "rule_set/form.rb", "app/views/rule_sets/_form.html.slim"
   end
 
   def rule_set_show_page
     copy_file "rule_set/show.rb", "app/views/rule_sets/show.html.slim"
+  end
+
+  def rule_set_javascrip
+    copy_file "rule_set/rule_set_js.rb", "app/javascript/packs/rule_sets.js"
   end
 
   def add_routes
@@ -149,7 +156,7 @@ class RoleGenerator < Rails::Generators::Base
       end
     end
     File.open("#{file_path}/application_copy.js","a") do |f|
-      f.write("\nrequire(\"./rule_set\")")
+      f.write("\nrequire(\"./rule_sets\")")
     end
     File.delete("#{file_path}/application.js")
     File.rename("#{file_path}/application_copy.js","#{file_path}/application.js")
@@ -162,7 +169,7 @@ class RoleGenerator < Rails::Generators::Base
   end
 
   def role_and_responsibility_migration
-    copy_file "role_and_responsibility/role_and_responsibility_migrate.rb", "db/migrate/#{@current_date + 1}_create_role_and_responsibilities.rb"
+    copy_file "role_and_responsibility/role_and_responsibility_migrate.rb", "db/migrate/#{@current_date + 3}_create_role_and_responsibilities.rb"
   end
 
 # Files for user_roles model and migration
@@ -171,7 +178,7 @@ class RoleGenerator < Rails::Generators::Base
   end
 
   def user_role_migration
-    copy_file "user_role/user_role_migrate.rb", "db/migrate/#{@current_date + 1}_create_user_roles.rb"
+    copy_file "user_role/user_role_migrate.rb", "db/migrate/#{@current_date + 4}_create_user_roles.rb"
   end
 
 # Files for user CRUD operations and assigning roles
@@ -181,23 +188,23 @@ class RoleGenerator < Rails::Generators::Base
   end
 
   def users_index
-    copy_file "user/index.rb", "app/views/index.rb"
+    copy_file "user/index.rb", "app/views/users/index.html.slim"
   end
 
   def users_edit
-    copy_file "user/edit.rb", "app/views/edit.rb"
+    copy_file "user/edit.rb", "app/views/users/edit.html.slim"
   end
 
   def users_new
-    copy_file "user/new.rb", "app/views/new.rb"
+    copy_file "user/new.rb", "app/views/users/new.html.slim"
   end
 
   def users_form
-    copy_file "user/form.rb", "app/views/_form.html.slim"
+    copy_file "user/form.rb", "app/views/users/_form.html.slim"
   end
 
   def user_assign_role
-    copy_file "user/assign_role.rb", "app/views/assign_role.slim"
+    copy_file "user/assign_role.rb", "app/views/users/assign_role.html.slim"
   end
 
 end

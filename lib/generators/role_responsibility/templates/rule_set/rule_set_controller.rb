@@ -11,7 +11,7 @@ class RuleSetsController < DashboardBaseController
     if RuleSet.first.nil?
       @rule_set = RuleSet.new
     else
-      flash[:error] = "A rule set already exists, edit the existing rule set"
+      flash[:alert] = "A rule set already exists, edit the existing rule set"
       redirect_back(fallback_location: root_path)
     end
   end
@@ -28,7 +28,7 @@ class RuleSetsController < DashboardBaseController
         flash[:notice]= "Rule set was successfully created."
         redirect_to rule_set_path
       else
-        flash[:error]= "Rule Set could not be saved."
+        flash[:alert]= "Rule Set could not be saved."
         render :new
       end
     end

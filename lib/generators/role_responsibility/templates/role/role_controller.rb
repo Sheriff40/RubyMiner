@@ -56,7 +56,7 @@ class RolesController < DashboardBaseController
 
   private
 
-  # create/update role_responsibility_system and responsibility
+  # create/update role_responsibility and responsibility
   def get_role_and_responsibility
     role_hash = {}
     role_and_responsibilities = params[:role_and_responsibility]
@@ -74,7 +74,7 @@ class RolesController < DashboardBaseController
 
   # Only allow a list of trusted parameters through.
   def role_params
-    params.require(:role_responsibility_system).permit(:name, :description, permission_ids: [])
+    params.require(:role_responsibility).permit(:name, :description, permission_ids: [])
   end
 
 end
