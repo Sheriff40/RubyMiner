@@ -8,6 +8,4 @@ class ApiScaffoldGenerator < Rails::Generators::NamedBase
   def parent_api_class
     template "parent_api.rb", "app/controllers/api_controller.rb"
   end
-
-
 end
