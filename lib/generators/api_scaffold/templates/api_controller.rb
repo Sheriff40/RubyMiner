@@ -2,12 +2,21 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApplicationController
 
   skip_before_action :verify_authenticity_token, only: [:create, :update, :destroy]
 
-
   before_action :set_<%= singular_name %>, only: [:update, :destroy, :show]
 
   def index
-    @<%= plural_name %> = <%= singular_name.titleize %>.all
-    render json: @<%= plural_name %>
+    query_params = request.query_parameters
+    if !params.empty?
+      begin
+        @<%=plural_name %> = <%=singular_name %>.where(query_params)
+        render json: @<%=plural_name %>
+      rescue
+        render json: {message: "Invalid query parameters"}, status: 404
+      end
+    else
+      @<%=plural_name %> = <%=singular_name.titleize %>.all
+      render json: @<%=plural_name %>
+    end
   end
 
   def show
