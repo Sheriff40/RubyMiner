@@ -5,15 +5,14 @@ Description:
 
     Step 1:
         Add the following code in routes.rb
+
+        post 'log_in', to: "api#user_log_in"
+
         namespace :api do
           namespace :v1 do
             resources :your_resource
           end
         end
-
-    Step 2:
-        Permit the params in the API controller
-        params.permit(:your_first_attribute, :your_second_attribute)
 
 Example:
     rails generate dashboard_base_generator Thing

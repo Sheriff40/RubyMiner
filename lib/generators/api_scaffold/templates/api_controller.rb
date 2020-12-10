@@ -5,9 +5,9 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApiController
 
   def index
     query_params = request.query_parameters
-    if !params.empty?
+    if !query_params.empty?
       begin
-        @<%=plural_name %> = <%=singular_name %>.where(query_params)
+        @<%=plural_name %> = <%=singular_name.titleize %>.where(query_params)
         render json: @<%=plural_name %>
       rescue
         render json: {message: "Invalid query parameters"}, status: 404
@@ -47,7 +47,6 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApiController
     end
   end
 
-
   def destroy
     if !@<%= singular_name%>.nil?
       if @<%= singular_name%>.destroy
@@ -58,12 +57,11 @@ class Api::V1::<%= plural_name.titleize %>Controller < ApiController
     else
       render json: {message: "No records found"}, status: 400
     end
-
   end
 
   private
 
-    def set_book
+    def set_<%= singular_name%>
       @<%= singular_name%> = <%= singular_name.titleize%>.find_by_id(params[:id])
     end
 
