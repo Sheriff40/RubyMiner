@@ -207,4 +207,22 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
     copy_file "user/assign_role.rb", "app/views/users/assign_role.html.slim"
   end
 
+  def add_routes
+    file_path = "#{Rails.root}/config"
+    routes_files = File.readlines("#{file_path}/routes.rb")
+    routes_files.each.with_index(0) do |line,index|
+      if index != (routes_files.count - 1)
+        File.open("#{file_path}/routes_copy.rb","a") do |f|
+          f.write(line)
+        end
+      end
+    end
+    File.open("#{file_path}/routes_copy.rb","a") do |f|
+      f.write("\n\tresources :users")
+    end
+    File.delete("#{file_path}/routes.rb")
+    File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")
+  end
+
+
 end

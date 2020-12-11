@@ -1,8 +1,6 @@
 class UsersController < DashboardBaseController
   before_action :set_role, only: :new
 
-  before_action :check_page_access, only: [:index]
-
   def index
     @users = User.all
   end
