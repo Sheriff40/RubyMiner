@@ -224,5 +224,9 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
     File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")
   end
 
+#   Pundit Policy for roles and responsibilities
+  def copy_users_policy
+    copy_file "user_policy_template.rb", "app/policies/users_policy.rb"
+  end
 
 end

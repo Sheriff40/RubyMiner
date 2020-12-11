@@ -1,5 +1,20 @@
 Description:
 
+    Step 1:
+        Add this pundit helper authorize method in the methods you want to apply authorization
+
+        authorize params, :user_access?, policy_class: UsersPolicy
+
+    Step 2:
+        Don't forget to handle Pundit::NotAuthorizedError
+        You can use:
+
+        rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+        def user_not_authorized
+            flash[:alert] = "Unauthorized Access"
+            redirect_to(request.referrer || root_path)
+        end
+
 Example:
     rails generate blog
 
