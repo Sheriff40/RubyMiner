@@ -23,11 +23,11 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def role_new_page
-    copy_file "role/new.rb", "app/views/roles/new.html.slim"
+    copy_file "role/new.rb", "app/views/roles/new.rb"
   end
 
   def role_edit_page
-    copy_file "role/edit.rb", "app/views/roles/edit.html.slim"
+    copy_file "role/edit.rb", "app/views/roles/edit.rb"
   end
 
   def role_form_page
@@ -35,7 +35,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def role_index
-    copy_file "role/index.rb", "app/views/roles/index.html.slim"
+    copy_file "role/index.rb", "app/views/roles/index.rb"
   end
 
 # Routes for roles
@@ -50,7 +50,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
       end
     end
     File.open("#{file_path}/routes_copy.rb","a") do |f|
-      f.write("\n\tresources :roles")
+      f.write("\n\tresources :roles\nend")
     end
     File.delete("#{file_path}/routes.rb")
     File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")
@@ -111,11 +111,11 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def rule_set_new_page
-    copy_file "rule_set/new.rb", "app/views/rule_sets/new.html.slim"
+    copy_file "rule_set/new.rb", "app/views/rule_sets/new.rb"
   end
 
   def rule_set_edit_page
-    copy_file "rule_set/edit.rb", "app/views/rule_sets/edit.html.slim"
+    copy_file "rule_set/edit.rb", "app/views/rule_sets/edit.rb"
   end
 
   def rule_set_form_page
@@ -141,7 +141,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
       end
     end
     File.open("#{file_path}/routes_copy.rb","a") do |f|
-      f.write("\n\tresource :rule_set, except: :destroy do \n\t\t put :remove_action \n\tend")
+      f.write("\n\tresource :rule_set, except: :destroy do \n\t\t put :remove_action \n\tend\nend")
     end
     File.delete("#{file_path}/routes.rb")
     File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")
@@ -188,15 +188,15 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def users_index
-    copy_file "user/index.rb", "app/views/users/index.html.slim"
+    copy_file "user/index.rb", "app/views/users/index.rb"
   end
 
   def users_edit
-    copy_file "user/edit.rb", "app/views/users/edit.html.slim"
+    copy_file "user/edit.rb", "app/views/users/edit.rb"
   end
 
   def users_new
-    copy_file "user/new.rb", "app/views/users/new.html.slim"
+    copy_file "user/new.rb", "app/views/users/new.rb"
   end
 
   def users_form
@@ -218,7 +218,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
       end
     end
     File.open("#{file_path}/routes_copy.rb","a") do |f|
-      f.write("\n\tresources :users")
+      f.write("\n\tresources :users do \n\t\t member do \n\t\t\t get :assign_role\n\t\t\t post :update_role\n\t\tend\n\tend\nend")
     end
     File.delete("#{file_path}/routes.rb")
     File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")

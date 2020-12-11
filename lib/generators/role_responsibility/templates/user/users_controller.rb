@@ -1,5 +1,4 @@
 class UsersController < DashboardBaseController
-  before_action :set_role, only: :new
 
   def index
     @users = User.all

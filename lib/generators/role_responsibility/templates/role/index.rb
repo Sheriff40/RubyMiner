@@ -1,35 +1,33 @@
-.dashboard-list-header.d-flex.justify-content-between.align-items-end
-  h4.d-inline-block.sub-heading
-    i.fas.fa-users
-    span.ml-3
-      = t "role_responsibility"
-  .d-flex.justify-content-between.align-items-end
-    .search-wrapper.mr-2
-      i.fa.fa-search.mr-2
-      input.search-box placeholder=("#{t('Search Here')}") type="search"
-    a.btn.btn-main.float-right href=new_role_path
-      i.fa.fa-plus.mr-1
-      span.ml-2 = t 'Add new'
-        / | Add New Role
-hr
-table.table.borderless-table
-  thead
-    tr
-      th scope="col-sm-2" = t 's n'
-      th scope="col-sm-3" = t 'name'
-      th scope="col-sm-4" = t 'permissions'
-      th scope="col-sm-4" = t 'model permissions'
-      th scope="col-sm-3" = t 'actions'
-  tbody
-    - @roles.each.with_index(1) do |role_responsibility, index|
-      tr
-        th = index
-        th = role_responsibility.name.titleize
-        th = role_responsibility.my_permission&.join(', ')&.titleize
-        th = role_responsibility.model_role_permission&.models&.join(', ')&.titleize
-        th
-          span.action-btn
-            a.mr-2 href=edit_role_path(role_responsibility)
-              i.fas.fa-pencil-alt.fa-sm
-            = link_to role_path(role_responsibility), method: :delete, data: { confirm: 'Are you sure to delete?' } do
-              i.fas.fa-trash.fa-sm
+.col-12
+  .row
+    .col-12.px-2.mt-3
+      h3.text-secondary.mb-0 style=("color: #f36774 !important;")  Roles
+      .row.mt-5
+        .col-12
+          = link_to new_role_path, class: "btn btn-outline-primary btn-sm float-right" do
+            i.fas.fa-plus
+            |&nbsp;Add Role
+
+          table.table.table-hover.bg-white.shadow.p-3.mb-5.bg-white.rounded.text-center#example-table
+            thead
+              tr
+                th scope="col-sm-2"
+                  | S.n
+                th scope="col-sm-3"
+                  | Name
+                th scope="col-sm-4"
+                  | Permissions
+                th scope="col-sm-3"
+                  | Actions
+            tbody
+              - @roles.each.with_index(1) do |role, index|
+                tr
+                  td = index
+                  td = role.name.titleize
+                  td = role.role_and_responsibility.role_rule
+                  td
+                    span.action-btn
+                      a.mr-2 href=edit_role_path(role)
+                        i.fas.fa-pencil-alt.fa-sm.text-primary
+                      = link_to role_path(role), method: :delete, data: { confirm: 'Are you sure to delete?' } do
+                        i.fas.fa-trash.fa-sm.text-danger

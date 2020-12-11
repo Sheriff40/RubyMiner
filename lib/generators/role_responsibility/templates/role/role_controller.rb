@@ -21,12 +21,12 @@ class RolesController < DashboardBaseController
   def create
     @role = Role.new(role_params)
     @role.role_rule = get_role_and_responsibility
-
     if @role.save
       flash[:notice] = "New Role Added"
       redirect_to roles_path
     else
       flash[:error] = "Role could not be added"
+      @models = eval(RuleSet.first.model_action_has
       render :new
     end
   end
@@ -74,7 +74,7 @@ class RolesController < DashboardBaseController
 
   # Only allow a list of trusted parameters through.
   def role_params
-    params.require(:role_responsibility).permit(:name, :description, permission_ids: [])
+    params.require(:role).permit(:name, :description, permission_ids: [])
   end
 
 end

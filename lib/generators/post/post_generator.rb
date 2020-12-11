@@ -29,11 +29,11 @@ class PostGenerator < Rails::Generators::Base
   end
 
   def new_post_page
-    copy_file "post_new.rb", "app/views/posts/new.html.slim"
+    copy_file "post_new.rb", "app/views/posts/new.rb"
   end
 
   def edit_post_page
-    copy_file "post_edit.rb", "app/views/posts/edit.html.slim"
+    copy_file "post_edit.rb", "app/views/posts/edit.rb"
   end
 
   def form_post_page
@@ -41,7 +41,7 @@ class PostGenerator < Rails::Generators::Base
   end
 
   def index_post_page
-    copy_file "post_index.rb", "app/views/posts/index.html.slim"
+    copy_file "post_index.rb", "app/views/posts/index.rb"
   end
 
   def show_post_page
