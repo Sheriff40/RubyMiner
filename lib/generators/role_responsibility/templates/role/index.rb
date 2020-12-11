@@ -4,6 +4,8 @@
       h3.text-secondary.mb-0 style=("color: #f36774 !important;")  Roles
       .row.mt-5
         .col-12
+          i.fa.fa-search.mr-2
+          .search-filter.d-inline
           = link_to new_role_path, class: "btn btn-outline-primary btn-sm float-right" do
             i.fas.fa-plus
             |&nbsp;Add Role

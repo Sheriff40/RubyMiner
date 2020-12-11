@@ -123,10 +123,10 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def rule_set_show_page
-    copy_file "rule_set/show.rb", "app/views/rule_sets/show.html.slim"
+    copy_file "rule_set/show.rb", "app/views/rule_sets/show.rb"
   end
 
-  def rule_set_javascrip
+  def rule_set_javascript
     copy_file "rule_set/rule_set_js.rb", "app/javascript/packs/rule_sets.js"
   end
 
@@ -204,7 +204,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def user_assign_role
-    copy_file "user/assign_role.rb", "app/views/users/assign_role.html.slim"
+    copy_file "user/assign_role.rb", "app/views/users/assign_role.rb"
   end
 
   def add_routes
@@ -218,7 +218,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
       end
     end
     File.open("#{file_path}/routes_copy.rb","a") do |f|
-      f.write("\n\tresources :users do \n\t\t member do \n\t\t\t get :assign_role\n\t\t\t post :update_role\n\t\tend\n\tend\nend")
+      f.write("\n\tresources :users do \n\t\t member do \n\t\t\t get :assign_role\n\t\t\t patch :update_role\n\t\tend\n\tend\nend")
     end
     File.delete("#{file_path}/routes.rb")
     File.rename("#{file_path}/routes_copy.rb","#{file_path}/routes.rb")

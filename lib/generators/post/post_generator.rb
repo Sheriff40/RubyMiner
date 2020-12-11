@@ -45,7 +45,7 @@ class PostGenerator < Rails::Generators::Base
   end
 
   def show_post_page
-    copy_file "post_show.rb", "app/views/posts/show.html.slim"
+    copy_file "post_show.rb", "app/views/posts/show.rb"
   end
 
   def sidebar_post_page
