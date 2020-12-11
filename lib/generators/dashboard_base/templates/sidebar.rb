@@ -26,6 +26,6 @@
         /   | Roles
 
         = link_to destroy_user_session_path, method:"delete", class:"text-decoration-none"
-        .nav-item.nav-link.text-secondary.pl-2.fa-sm.font-weight-bold
-          i.fas.fa-sign-out-alt.mr-3
-          | Log Out
+          .nav-item.nav-link.text-secondary.pl-2.fa-sm.font-weight-bold
+            i.fas.fa-sign-out-alt.mr-3
+            | Log Out

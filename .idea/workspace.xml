@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="" />
+    <list default="true" id="59a72d1b-466a-40f8-9119-9184c1b64a70" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/post/post_generator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generators/role_responsibility/role_responsibility_generator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generators/role_responsibility/role_responsibility_generator.rb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,38 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/role_responsibility_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="229" column="5" lean-forward="true" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/templates/user/index.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/USAGE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/templates/user_policy_template.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="-15">
+              <caret line="206" column="75" selection-start-line="206" selection-start-column="75" selection-end-line="206" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -77,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/generators/role/templates/form.html.slim" />
         <option value="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_controller.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_model.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_and_responsibility/templates/role_and_responsibility_migrate.rb" />
@@ -93,13 +71,10 @@
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/edit.html.slim" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/_form.html.slim" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/user/assign_role.htm.slim" />
-        <option value="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/templates/rule_set/form.rb" />
         <option value="$PROJECT_DIR$/lib/rubyminer/version.rb" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/USAGE" />
         <option value="$PROJECT_DIR$/lib/generators/api_scaffold/templates/api_controller.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/post/post_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility_system/role_responsiblity_system_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/role/role_migrate.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/role_and_responsibility/role_and_responsibility_migrate.rb" />
@@ -116,7 +91,6 @@
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/role/form.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/role/index.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/user/index.html.slim" />
-        <option value="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/rule_set/show.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/rule_set/show.html.slim" />
         <option value="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.html.slim" />
@@ -126,8 +100,13 @@
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/user/assign_role.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/user/index.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/application_policy_template.rb" />
-        <option value="$PROJECT_DIR$/lib/generators/role_responsibility/role_responsibility_generator.rb" />
         <option value="$PROJECT_DIR$/lib/generators/role_responsibility/USAGE" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility/templates/user_policy_template.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/notification/notification_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/post/post_generator.rb" />
+        <option value="$PROJECT_DIR$/lib/generators/role_responsibility/role_responsibility_generator.rb" />
       </list>
     </option>
   </component>
@@ -223,15 +202,7 @@
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="generators" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="role_responsibility" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="rubyminer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="generators" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="role_responsibility" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dashboard_base" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -360,12 +331,12 @@
       <workItem from="1607662392878" duration="2873000" />
       <workItem from="1607672094577" duration="3037000" />
       <workItem from="1607675273105" duration="535000" />
-      <workItem from="1607676187057" duration="1431000" />
+      <workItem from="1607676187057" duration="1949000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93624000" />
+    <option name="totallyTimeSpent" value="94142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,7 +349,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48994976" visible="true" weight="0.33359936" />
       <window_info id="Structure" order="1" sideWeight="0.51005024" side_tool="true" weight="0.36871508" />
@@ -408,13 +378,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/templates/login.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/USAGE" />
-    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/data_table_ss_generator.rb" />
     <entry file="file://$PROJECT_DIR$/lib/generators/data_table_ss/templates/data_table.rb" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -570,20 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" selection-start-line="62" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/notification/notification_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/templates/user/form.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -633,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/templates/user_role/user_role.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -682,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/role_responsibility_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="229" column="5" lean-forward="true" selection-start-line="229" selection-start-column="5" selection-end-line="229" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/USAGE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -698,8 +633,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/templates/user_policy_template.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="-208">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/dashboard_base_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/post/post_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/notification/notification_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="20" column="67" selection-start-line="20" selection-start-column="67" selection-end-line="20" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/dashboard_base/templates/sidebar.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="30" column="21" selection-start-line="28" selection-start-column="10" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/role_responsibility/role_responsibility_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="206" column="75" selection-start-line="206" selection-start-column="75" selection-end-line="206" selection-end-column="75" />
         </state>
       </provider>
     </entry>

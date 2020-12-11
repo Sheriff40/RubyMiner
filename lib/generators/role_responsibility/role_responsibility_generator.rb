@@ -23,11 +23,11 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def role_new_page
-    copy_file "role/new.rb", "app/views/roles/new.rb"
+    copy_file "role/new.rb", "app/views/roles/new.html.slim"
   end
 
   def role_edit_page
-    copy_file "role/edit.rb", "app/views/roles/edit.rb"
+    copy_file "role/edit.rb", "app/views/roles/edit.html.slim"
   end
 
   def role_form_page
@@ -35,7 +35,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def role_index
-    copy_file "role/index.rb", "app/views/roles/index.rb"
+    copy_file "role/index.rb", "app/views/roles/index.html.slim"
   end
 
 # Routes for roles
@@ -111,11 +111,11 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def rule_set_new_page
-    copy_file "rule_set/new.rb", "app/views/rule_sets/new.rb"
+    copy_file "rule_set/new.rb", "app/views/rule_sets/new.html.slim"
   end
 
   def rule_set_edit_page
-    copy_file "rule_set/edit.rb", "app/views/rule_sets/edit.rb"
+    copy_file "rule_set/edit.rb", "app/views/rule_sets/edit.html.slim"
   end
 
   def rule_set_form_page
@@ -123,7 +123,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def rule_set_show_page
-    copy_file "rule_set/show.rb", "app/views/rule_sets/show.rb"
+    copy_file "rule_set/show.rb", "app/views/rule_sets/show.html.slim"
   end
 
   def rule_set_javascript
@@ -188,15 +188,15 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def users_index
-    copy_file "user/index.rb", "app/views/users/index.rb"
+    copy_file "user/index.rb", "app/views/users/index.html.slim"
   end
 
   def users_edit
-    copy_file "user/edit.rb", "app/views/users/edit.rb"
+    copy_file "user/edit.rb", "app/views/users/edit.html.slim"
   end
 
   def users_new
-    copy_file "user/new.rb", "app/views/users/new.rb"
+    copy_file "user/new.rb", "app/views/users/new.html.slim"
   end
 
   def users_form
@@ -204,7 +204,7 @@ class RoleResponsibilityGenerator < Rails::Generators::Base
   end
 
   def user_assign_role
-    copy_file "user/assign_role.rb", "app/views/users/assign_role.rb"
+    copy_file "user/assign_role.rb", "app/views/users/assign_role.html.slim"
   end
 
   def add_routes
