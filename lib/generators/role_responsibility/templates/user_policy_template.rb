@@ -9,7 +9,7 @@ class ApplicationPolicy
   # Method to check if the roles that are assigned to a user,
   # is given access to peform the action in the request parameter of the model
   def user_access?
-    @user_access = true
+    @user_access = false
 
     user_roles = @user.roles
 
